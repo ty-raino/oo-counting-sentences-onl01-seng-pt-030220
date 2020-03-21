@@ -13,10 +13,13 @@ class String
   end
 
   def exclamation?
+    self.end_with("!") ? true : false
 
   end
 
   def count_sentences
+    sentence_array = self.split(/[.?!]/)
+    sentence_array.delete_if{|sentence| sentence.empty?}
 
   end
 end
