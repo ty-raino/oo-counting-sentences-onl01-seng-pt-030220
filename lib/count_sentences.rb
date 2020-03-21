@@ -4,6 +4,7 @@ class String
 
   def sentence?
    "Hello".end_with?(".") ? true : false
+   puts self
   end
 
   def question?
